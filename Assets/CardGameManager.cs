@@ -77,11 +77,13 @@ public class CardGameManager : MonoBehaviour
         {
             firstCard.MatchCard();
             secondCard.MatchCard();
+            SoundManager.Instance.PlaySoundFx();
         }
         else
         {
             firstCard.CloseCard();
             secondCard.CloseCard();
+            SoundManager.Instance.PlaySoundFx();
         }
 
         firstCard = null;

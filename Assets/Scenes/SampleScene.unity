@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardGameManager
   cardArea: {fileID: 1469030360}
   cardPrefab: {fileID: 1295957316}
-  pairCount: 100
+  pairCount: 10
 --- !u!4 &379781823
 Transform:
   m_ObjectHideFlags: 0
@@ -400,6 +400,52 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 337.40552, y: 214.79237, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &388568541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388568543}
+  - component: {fileID: 388568542}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &388568542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388568541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89efa56eafb3c8e4f8d76958583ed7fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  clipBGM: {fileID: 8300000, guid: c6c97795326864f48a3023155d38ba7d, type: 3}
+  clipFx: {fileID: 8300000, guid: 831a0a3f4c7449649a4108a038223914, type: 3}
+--- !u!4 &388568543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388568541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 351.93954, y: 242.59924, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -892,3 +938,4 @@ SceneRoots:
   - {fileID: 2033429210}
   - {fileID: 379781823}
   - {fileID: 2015027387}
+  - {fileID: 388568543}
